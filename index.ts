@@ -44,3 +44,7 @@ const main = async () => {
 };
 
 main();
+
+export { Connection };
+
+export default Connection;
