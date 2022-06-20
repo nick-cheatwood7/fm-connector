@@ -1,4 +1,4 @@
-# @nick-cheatwood/fm-connector
+# @nick-cheatwood7/fm-connector
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/nick-cheatwood7/fm-connector)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nick-cheatwood7/fm-connector)
