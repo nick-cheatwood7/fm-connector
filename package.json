@@ -1,0 +1,34 @@
+{
+  "name": "@nick-cheatwood/fm-connector",
+  "version": "1.0.0",
+  "description": "A lightweight NodeJS adapter for FileMaker apps",
+  "repository": "nick-cheatwood7/fm-connector",
+  "main": "/index.js",
+  "keywords": [
+    "filemaker",
+    "nodejs",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "gen-env": "gen-env-types .env -o src/env.d.ts -e .",
+    "dev": "nodemon dist/index.js",
+    "start": "yarn build && NODE_ENV=production node dist/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^8.3.4",
+    "gen-env-types": "^1.3.4",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv-safe": "^8.2.0"
+  }
+}
