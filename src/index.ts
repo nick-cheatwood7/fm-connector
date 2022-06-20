@@ -1,5 +1,13 @@
 import "dotenv-safe";
-import Connection, { API_VERSION } from "./src/Connection";
+import Connection, { API_VERSION } from "./Connection";
+import {
+  Record,
+  CreateRecordResponse,
+  FindOptions,
+  LoginResponse,
+  Message,
+  SortOptions,
+} from "./types";
 import { v4 } from "uuid";
 
 const db = new Connection({
@@ -45,6 +53,14 @@ const main = async () => {
 
 main();
 
-export { Connection };
+export {
+  Connection,
+  Record,
+  CreateRecordResponse,
+  FindOptions,
+  LoginResponse,
+  Message,
+  SortOptions,
+};
 
 export default Connection;
