@@ -1,4 +1,4 @@
-import "dotenv-safe";
+import "dotenv-safe/config";
 import Connection, { API_VERSION } from "./Connection";
 import {
   Record,
@@ -17,6 +17,8 @@ const db = new Connection({
   password: process.env.DB_PASS,
   apiVersion: API_VERSION.Latest,
 });
+
+console.log(db);
 
 const main = async () => {
   await db.login();

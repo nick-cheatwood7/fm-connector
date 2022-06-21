@@ -15,8 +15,8 @@ export interface Message {
 }
 
 export type Record = {
-  fieldData: any;
-  portalData: any;
+  fieldData: Object;
+  portalData: Object;
   recordId: string;
   modId: string;
 };

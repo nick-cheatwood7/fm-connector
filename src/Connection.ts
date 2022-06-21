@@ -49,6 +49,10 @@ export default class Connection {
     });
   }
 
+  // private incrementExpiration(): void {
+  //   this.exp = Date.now() + 1000 * 60 * 15; // Expires in 15 mins
+  // }
+
   async login(): Promise<void> {
     try {
       const res: AxiosResponse = await this.instance.post(
@@ -79,7 +83,7 @@ export default class Connection {
 
   async create(
     layout: string,
-    record: { fieldData: any }
+    record: { fieldData: Object }
   ): Promise<CreateRecordResponse | null> {
     try {
       const res: AxiosResponse = await this.instance.post(
